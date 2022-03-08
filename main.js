@@ -1,14 +1,13 @@
-import {UI_ELEMENTS} from './view.js';
+// const API_KEY = '1041b355b3b6422eb66d9f5e517f7b52';
 
-const apiKey = 'f660a2fb1e4bad108d6160b7f58c555f';
-const serverUrl = 'https://api.openweathermap.org/data/2.5/weather';
+const API_KEY = 'f660a2fb1e4bad108d6160b7f58c555f';
+const SERVER_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 function getCity() {
     const cityName = UI_ELEMENTS.INPUT.value;
-    const url = `${serverUrl}?q=${cityName}&appid=${apiKey}`;
+    const url = `${SERVER_URL}?q=${cityName}&appid=${API_KEY}`;
 
-    let promise = fetch(url);
-    let json = promise.then(response => response.json());
+    let json = fetch(url).then(response => response.json());
     
     return json;
 }
@@ -18,19 +17,4 @@ function kelvinToCelsius(temp) {
     return tempC;
 }
 
-function showWeatherNow(event) {
-    getCity().then(city => { 
-        UI_ELEMENTS.CITY_NOW.textContent = city.name;
-    });
-
-    getCity().then(city => {
-        let temp = city.main.temp;
-        let degreeSing = '&#176;'
-
-        UI_ELEMENTS.TEMP_NOW.innerHTML = `${kelvinToCelsius(temp)}${degreeSing}`;
-    });
-
-    event.preventDefault();
-}
-
-UI_ELEMENTS.SUBMIT.addEventListener('click', showWeatherNow);
+export {getCity, kelvinToCelsius};
