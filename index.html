@@ -41,7 +41,6 @@
                                 </button>
                             </div>
                         </div>
-                        
                     </div>
                     <div class="weather__tab tab-details">
                         <div class="weather__tab-container weather__tab-container_details">
@@ -50,26 +49,26 @@
                             </h2>
                             <ul class="tab-details__list">
                                 <li class="tab-details__list-item">
-                                    Temperature: 14&#176;
+                                    Temperature: <span class="details__temp">14&#176;</span>
                                 </li>
                                 <li class="tab-details__list-item">
-                                        Feels like: 10&#176;
+                                    Feels like: <span class="details__feels"><span></sp176;</span>an> 10&#
                                 </li>
                                 <li class="tab-details__list-item">
-                                    Weather: Clouds
+                                    Weather: <span class="details__weather">Clouds</span>
                                 </li>
                                 <li class="tab-details__list-item">
-                                   Sunrise: 03:21 
+                                    Sunrise: <span class="details__sunrise">03:21</span>
                                 </li>
                                 <li class="tab-details__list-item">
-                                    Sunset: 18:54 
+                                    Sunset: <span class="details__sunset">18:54</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="weather__tab tab-forecast">
                         <div class="weather__tab-container weather__tab-container_forecast">
-                            <h2 class="header header_tab">
+                            <h2 class="header header_forecast">
                                 Aktobe
                             </h2>
                             <ul class="tab-forecast__list">
@@ -80,11 +79,11 @@
                                     </div>
                                     <div class="tab-forecast__item-bottom flex">
                                         <div class="tab-forecast__briefly-condition">
-                                            <p>
-                                                Temperature: 13&#176;
+                                            <p class="tab-forecast__temp">
+                                                Temperature: <span>13&#176;</span>
                                             </p>
-                                            <p>
-                                                Feels like: 10&#176;
+                                            <p class="tab-forecast__feels">
+                                                Feels like: <span>10&#176;</span> 
                                             </p>
                                         </div>
                                         <div class="tab-forecast__weather">
@@ -99,11 +98,11 @@
                                     </div>
                                     <div class="tab-forecast__item-bottom flex">
                                         <div class="tab-forecast__briefly-condition">
-                                            <p>
-                                                Temperature: 13&#176;
+                                            <p class="tab-forecast__temp">
+                                                Temperature: <span>13&#176;</span>
                                             </p>
-                                            <p>
-                                                Feels like: 10&#176;
+                                            <p class="tab-forecast__feels">
+                                                Feels like: <span>10&#176;</span> 
                                             </p>
                                         </div>
                                         <div class="tab-forecast__weather">
@@ -118,11 +117,30 @@
                                     </div>
                                     <div class="tab-forecast__item-bottom flex">
                                         <div class="tab-forecast__briefly-condition">
-                                            <p>
-                                                Temperature: 13&#176;
+                                            <p class="tab-forecast__temp">
+                                                Temperature: <span>13&#176;</span>
                                             </p>
-                                            <p>
-                                                Feels like: 10&#176;
+                                            <p class="tab-forecast__feels">
+                                                Feels like: <span>10&#176;</span> 
+                                            </p>
+                                        </div>
+                                        <div class="tab-forecast__weather">
+                                            Rain
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tab-forecast__list-item flex">
+                                    <div class="tab-forecast__item-top flex">
+                                        <span class="tab-forecast__date">17 May</span>
+                                        <span class="tab-forecast__time">21:00</span>
+                                    </div>
+                                    <div class="tab-forecast__item-bottom flex">
+                                        <div class="tab-forecast__briefly-condition">
+                                            <p class="tab-forecast__temp">
+                                                Temperature: <span>13&#176;</span>
+                                            </p>
+                                            <p class="tab-forecast__feels">
+                                                Feels like: <span>10&#176;</span> 
                                             </p>
                                         </div>
                                         <div class="tab-forecast__weather">
@@ -139,17 +157,48 @@
                         Added Locations:
                     </h2>
                     <ul class="weather__locations-list">
-                        <li class="weather__locations-list-item">Amur</li>
-                        <li class="weather__locations-list-item">Samara</li>
-                        <li class="weather__locations-list-item">Bali</li>
-                        <li class="weather__locations-list-item">Dane</li>
-                        <li class="weather__locations-list-item">Kilo</li>
-                        <li class="weather__locations-list-item">Nur-Sultan</li>
+                        <!-- <li class="weather__locations-list-item flex">
+                            <button class="weather__locations-favorite-btn">
+                                Amur
+                            </button>
+                            <button class="weather__location-del"></button>
+                        </li>
+                        <li class="weather__locations-list-item flex">
+                            <button class="weather__locations-favorite-btn">
+                                Samara
+                            </button>
+                            <button class="weather__location-del"></button>
+                        </li>
+                        <li class="weather__locations-list-item flex">
+                            <button class="weather__locations-favorite-btn">
+                                Bali
+                            </button>
+                            <button class="weather__location-del"></button>
+                        </li>
+                        <li class="weather__locations-list-item flex">
+                            <button class="weather__locations-favorite-btn">
+                                Dane
+                            </button>
+                            <button class="weather__location-del"></button>
+                        </li>
+                        <li class="weather__locations-list-item flex">
+                            <button class="weather__locations-favorite-btn">
+                                Kilo
+                            </button>
+                            <button class="weather__location-del"></button>
+                        </li>
+                        <li class="weather__locations-list-item flex">
+                            <button class="weather__locations-favorite-btn">
+                                Nur-Sultan
+                            </button>
+                            <button class="weather__location-del"></button>
+                        </li> -->
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <script type="module" src="./main.js"></script>
+    <script type="module" src="./view.js"></script>
 </body>
 </html>

@@ -160,16 +160,15 @@ body {
 .weather__tab-container_forecast {
     padding-right: 16px;
     overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
 }
 
+.weather__locations::-webkit-scrollbar,
 .weather__tab-container_forecast::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
 
-.header_tab {
+.header_forecast {
     margin-bottom: 7px;
 }
 
@@ -199,8 +198,13 @@ body {
     background-position: bottom;
 }
 
+.tab-forecast__temp {
+    margin-bottom: 5px;
+}
+
 .weather__locations {
     width: 298px;
+    overflow-y: scroll;
 }
 
 .header_locations {
@@ -212,9 +216,19 @@ body {
 
 .weather__locations-list {
     padding-left: 18px;
+    padding-right: 18px;
     padding-top: 33px;
 }
 
-.weather__locations-list-item:not(:last-child) {
+.weather__locations-list-item {
     margin-bottom: 14px;
+    justify-content: space-between;
+}
+
+.weather__location-del {
+    width: 17px;
+    height: 16px;
+    align-self: center;
+    background-image: url('../img/close-icon.svg');
+    background-repeat: no-repeat;
 }
