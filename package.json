@@ -1,0 +1,22 @@
+{
+  "name": "web_weather",
+  "version": "1.0.0",
+  "description": "web weather app",
+  "main": "view.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "weather",
+    "web"
+  ],
+  "author": "losyashboi",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.28.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.4.1"
+  }
+}

@@ -1,15 +1,19 @@
 // import { favoriteList } from "./view.js";
 import { createFavorite } from "./main.js";
 
-const favoriteList = localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [];
+const currentCity = localStorage.getItem('currentCity');
+const favoriteList = new Set( JSON.parse(localStorage.getItem('favorites')) );
 
 export function showStorage() {
-    const favoriteCities = JSON.parse(localStorage.getItem('favorites'));
+    // console.log(favoriteList);
     
-    favoriteCities.forEach(item => {
-        createFavorite(item)
-    });
+    if (favoriteList) {
+        favoriteList.forEach(item => {
+            createFavorite(item)
+        });
+    }
+    // favoriteList.clear();
     // localStorage.clear();
 }
 
-export {favoriteList};
+export {favoriteList, currentCity};
